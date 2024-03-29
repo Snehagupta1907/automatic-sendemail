@@ -6,6 +6,6 @@ const router=express.Router();
 router.get('/',(req,res)=>{
     res.send('Hello World');
 })
-router.post('/send-email',sendEmailController);
+router.post('/',sendEmailController);
 
 export default router;
