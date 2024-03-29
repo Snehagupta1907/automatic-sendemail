@@ -3,7 +3,7 @@ import { sendEmailController } from '../controllers/sendEmailController.js';
 const router=express.Router();
 
 
-router.get('/test',(req,res)=>{
+router.get('/',(req,res)=>{
     res.send('Hello World');
 })
 router.post('/send-email',sendEmailController);
